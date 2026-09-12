@@ -1,0 +1,4 @@
+{
+  "desc": "BadmintonFriendApp sitemap",
+  "rules": [{ "action": "allow", "page": "*" }]
+}
