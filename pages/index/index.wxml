@@ -1,0 +1,27 @@
+<view class="page">
+  <view class="hero">
+    <text class="eyebrow">BADMINTON FRIEND</text>
+    <text class="title">找到实力相近的球友</text>
+    <text class="subtitle">先完成一次自我测评，再带着真实标签去约球。</text>
+  </view>
+
+  <view class="profile">
+    <view class="avatar">羽</view>
+    <view>
+      <view class="name">{{profile.nickname}}</view>
+      <view class="level">当前等级：{{profile.level}}</view>
+    </view>
+  </view>
+
+  <view class="section">
+    <view class="section-title">我的能力标签</view>
+    <view class="tag-list">
+      <text wx:for="{{profile.tags}}" wx:key="*this" class="tag">{{item}}</text>
+    </view>
+  </view>
+
+  <button class="primary" bindtap="goAssessment">开始自我测评</button>
+  <button class="secondary" bindtap="goMatches">查看附近约球</button>
+
+  <view class="hint">测评结果仅作训练和匹配参考，不作为专业运动诊断。</view>
+</view>
