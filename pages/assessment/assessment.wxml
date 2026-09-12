@@ -1,0 +1,20 @@
+<view class="page">
+  <view class="intro">
+    <text class="title">动作自我测评</text>
+    <text class="text">后续将接入开源姿态分析项目。当前原型用于验证“提交测评后生成标签”的核心流程。</text>
+  </view>
+
+  <view wx:if="{{!submitted}}" class="card">
+    <text class="card-title">本次练习</text>
+    <text class="detail">建议上传一段清晰的高远球或杀球练习视频。</text>
+    <button class="primary" bindtap="submitAssessment">生成演示测评结果</button>
+  </view>
+
+  <view wx:else class="card">
+    <text class="card-title">测评完成</text>
+    <text class="detail">系统已根据演示结果生成可用于约球筛选的能力标签。</text>
+    <view class="tag-list">
+      <text wx:for="{{tags}}" wx:key="*this" class="tag">{{item}}</text>
+    </view>
+  </view>
+</view>
