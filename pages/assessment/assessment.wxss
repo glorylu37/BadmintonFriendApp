@@ -1,0 +1,9 @@
+.page { padding: 40rpx 32rpx; }
+.intro { padding: 12rpx 8rpx 32rpx; }
+.title { display: block; font-size: 46rpx; font-weight: 700; }
+.text, .detail { display: block; margin-top: 16rpx; color: #607067; line-height: 1.65; }
+.card { background: #fff; padding: 32rpx; border-radius: 16rpx; }
+.card-title { display: block; font-size: 34rpx; font-weight: 700; }
+.primary { margin-top: 32rpx; height: 92rpx; line-height: 92rpx; background: #0b6e4f; color: #fff; border-radius: 14rpx; }
+.tag-list { display: flex; flex-wrap: wrap; gap: 14rpx; margin-top: 28rpx; }
+.tag { padding: 12rpx 18rpx; background: #e3f1ea; color: #0b6e4f; border-radius: 999rpx; font-size: 25rpx; }
